@@ -44,8 +44,8 @@ class PageRegister extends StatelessWidget {
           decoration: BoxDecoration(
               gradient: LinearGradient(
             colors: [
-              Color.fromARGB(235, 246, 246, 243),
-              Color.fromARGB(255, 213, 185, 63)
+              Color.fromARGB(238, 252, 70, 234),
+              Color.fromARGB(255, 136, 236, 70)
             ],
             stops: [0.25, 0.75],
             begin: Alignment.topLeft,
@@ -99,12 +99,12 @@ class PageRegister extends StatelessWidget {
                               height: 10,
                             ),
                             Text(
-                              "Bạn là thành viên mới",
-                              style: AppConstant.textFancyheader,
+                              "Tạo Tài Khoản Ngay",
+                              style: AppConstant.textfancyheader1,
                             ),
                             Text(
-                              "Tạo tài khoản ngay!",
-                              style: AppConstant.textFancyheader,
+                              "Tra Cứu Liền Tay !",
+                              style: AppConstant.textfancyheader1,
                             ),
                             const SizedBox(
                               height: 20,

@@ -22,7 +22,7 @@ class SubPageDsHocPhan extends StatelessWidget {
           child: Text(
             'Danh Sách Học Phần',
             style: TextStyle(
-              color: Color.fromARGB(255, 146, 13, 6),
+              color: Color.fromARGB(255, 6, 27, 146),
               fontSize: 30,
               fontWeight: FontWeight.bold,
             ),
@@ -60,7 +60,7 @@ class SubPageDsHocPhan extends StatelessWidget {
                         height: 500,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 56, 174, 195),
+                          color: Color.fromARGB(255, 85, 240, 98),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Padding(
@@ -95,7 +95,7 @@ class SubPageDsHocPhan extends StatelessWidget {
                                 },
                                 child: SizedBox(
                                   width: double.infinity,
-                                  height: 50,
+                                  height: 55,
                                   child: CustomButton(textButton: 'Đăng ký'),
                                 ),
                               ),

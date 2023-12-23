@@ -32,8 +32,8 @@ class PageLogin extends StatelessWidget {
             decoration: BoxDecoration(
                 gradient: LinearGradient(
               colors: [
-                Color.fromARGB(235, 246, 246, 243),
-                Color.fromARGB(255, 213, 185, 63)
+                Color.fromARGB(238, 252, 70, 234),
+                Color.fromARGB(255, 136, 236, 70)
               ],
               stops: [0.25, 0.75],
               begin: Alignment.topLeft,
@@ -56,11 +56,11 @@ class PageLogin extends StatelessWidget {
                             // ignore: avoid_unnecessary_containers
                             Text(
                               "Mừng Quay Lại",
-                              style: AppConstant.textFancyheader,
+                              style: AppConstant.textfancyheader1,
                             ),
                             Text(
                               "Tôi Rất Nhớ Bạn!",
-                              style: AppConstant.textFancyheader,
+                              style: AppConstant.textfancyheader1,
                             ),
                             const SizedBox(
                               height: 30,
@@ -90,11 +90,12 @@ class PageLogin extends StatelessWidget {
                                           PageForgotPass.routeName),
                                   child: Text(
                                     "Quên mật khẩu?",
-                                    style: AppConstant.textLink,
+                                    style: AppConstant.textlink1,
                                   ),
                                 ),
                               ],
                             ),
+
                             viewmodel.status == 2
                                 ? Text(
                                     viewmodel.errorMessage,
@@ -122,7 +123,7 @@ class PageLogin extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text("Chưa có tài khoản? ",
-                                    style: AppConstant.textLink),
+                                    style: AppConstant.textlink1),
                                 GestureDetector(
                                   onTap: () => Navigator.popAndPushNamed(
                                       context, PageRegister.routeName),
