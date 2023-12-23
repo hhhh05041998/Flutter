@@ -1,8 +1,10 @@
 import 'package:connection/models/hocphan.dart';
+import 'package:connection/providers/hocphandangky_viewmodel.dart';
 import 'package:connection/providers/mainViewModel.dart';
 import 'package:connection/repositories/ds_hocphan_repository.dart';
 import 'package:connection/ui/custom_control.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'AppConstant.dart';
 
@@ -12,6 +14,7 @@ class SubPageDsHocPhan extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final viewmodel = Provider.of<HocPhanDangKyViewModel>(context);
     return Column(
       children: [
         const Padding(
@@ -19,14 +22,14 @@ class SubPageDsHocPhan extends StatelessWidget {
           child: Text(
             'Danh Sách Học Phần',
             style: TextStyle(
-              color: Color.fromARGB(255, 6, 27, 146),
+              color: Color.fromARGB(255, 146, 13, 6),
               fontSize: 30,
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
         SizedBox(
-          height: MediaQuery.of(context).size.height * 0.80,
+          height: MediaQuery.of(context).size.height * 0.75,
           child: FutureBuilder<List<HocPhan>>(
             future: HocPhanRepository().getDsHocPhan(),
             builder: (context, snapshot) {
@@ -40,7 +43,7 @@ class SubPageDsHocPhan extends StatelessWidget {
                 // Xây dựng giao diện sử dụng dữ liệu từ API
                 List<HocPhan> dataList = snapshot.data!;
                 return SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.50,
+                  height: MediaQuery.of(context).size.height * 0.8,
                   width: double.infinity,
                   child: GridView.builder(
                     padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
@@ -57,7 +60,7 @@ class SubPageDsHocPhan extends StatelessWidget {
                         height: 500,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 52, 241, 5),
+                          color: Color.fromARGB(255, 56, 174, 195),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Padding(
@@ -87,8 +90,8 @@ class SubPageDsHocPhan extends StatelessWidget {
                               ),
                               InkWell(
                                 onTap: () async {
-                                  // await viewmodel
-                                  //     .dangKyHocPhan(dataList[index].id);
+                                  await viewmodel
+                                      .dangKyHocPhan(dataList[index].id);
                                 },
                                 child: SizedBox(
                                   width: double.infinity,

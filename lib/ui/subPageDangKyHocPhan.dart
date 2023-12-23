@@ -5,8 +5,8 @@ import 'package:connection/ui/AppConstant.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class SubPageDiemDanh extends StatelessWidget {
-  const SubPageDiemDanh({super.key});
+class SubPageDangKyHocphan extends StatelessWidget {
+  const SubPageDangKyHocphan({super.key});
   static int idPage = 2;
 
   @override
@@ -26,7 +26,7 @@ class SubPageDiemDanh extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: MediaQuery.of(context).size.height - 150,
+          height: MediaQuery.of(context).size.height - 200,
           child: FutureBuilder<List<HocPhanDangKy>>(
             future: viewmodel.getHocPhanDangKy(),
             builder: (context, snapshot) {
@@ -40,7 +40,7 @@ class SubPageDiemDanh extends StatelessWidget {
                 // Xây dựng giao diện sử dụng dữ liệu từ API
                 List<HocPhanDangKy> dataList = snapshot.data!;
                 return SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.50,
+                  height: MediaQuery.of(context).size.height * 0.4,
                   width: double.infinity,
                   child: GridView.builder(
                     padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),

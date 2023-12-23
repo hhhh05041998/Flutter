@@ -47,7 +47,7 @@ class SubPageDsLop extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                          color: Colors.pink[300],
+                          color: Color.fromARGB(255, 234, 208, 216),
                           borderRadius: BorderRadius.circular(20)),
                       height: MediaQuery.of(context).size.height * 0.7,
                       width: double.infinity,
