@@ -18,12 +18,13 @@ class PageLogin extends StatelessWidget {
     final viewmodel = Provider.of<LoginViewModel>(context);
     final size = MediaQuery.of(context).size;
     if (viewmodel.status == 3) {
-      Future.delayed(
+      var future2 = Future.delayed(
         Duration.zero,
         () {
           Navigator.popAndPushNamed(context, PageMain.routeName);
         },
       );
+      var future = future2;
     }
 
     return Scaffold(
@@ -32,8 +33,8 @@ class PageLogin extends StatelessWidget {
             decoration: BoxDecoration(
                 gradient: LinearGradient(
               colors: [
-                Color.fromARGB(238, 252, 70, 234),
-                Color.fromARGB(255, 136, 236, 70)
+                Color.fromARGB(255, 212, 280, 58),
+                Color.fromARGB(255, 212, 212, 58)
               ],
               stops: [0.25, 0.75],
               begin: Alignment.topLeft,

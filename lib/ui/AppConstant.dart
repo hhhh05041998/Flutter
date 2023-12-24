@@ -8,26 +8,26 @@ class AppConstant {
   static TextStyle textFancyheader = GoogleFonts.sourceSerif4(
       fontWeight: FontWeight.bold,
       fontSize: 30,
-      color: Color.fromARGB(255, 248, 248, 246));
+      color: Color.fromARGB(255, 212, 212, 58));
 
   static TextStyle textError = TextStyle(
-    color: Colors.red[300],
+    color: const Color.fromARGB(255, 232, 47, 47),
     fontSize: 20,
   );
 
   static TextStyle textLink =
-      const TextStyle(color: Color.fromARGB(255, 40, 148, 255));
+      const TextStyle(color: Color.fromARGB(255, 25, 125, 219));
   static TextStyle textLinkDark =
       const TextStyle(color: Color.fromARGB(255, 9, 11, 14));
 
   static TextStyle textBody =
-      const TextStyle(color: Color.fromARGB(255, 40, 148, 255), fontSize: 20);
+      const TextStyle(color: Color.fromARGB(255, 133, 144, 154), fontSize: 20);
   static TextStyle textBodyFocus =
       const TextStyle(color: Color.fromARGB(255, 216, 222, 227), fontSize: 18);
 
-  static Color mainColor = Color.fromARGB(212, 229, 79, 240);
-  static Color secondaryColor = Color.fromARGB(255, 233, 119, 233);
-  static Color thirdColor = const Color.fromARGB(255, 40, 148, 255);
+  static Color mainColor = Color.fromARGB(210, 166, 210, 209);
+  static Color secondaryColor = Color.fromARGB(210, 166, 210, 209);
+  static Color thirdColor = Color.fromARGB(255, 3, 136, 244);
 
   static bool isDate(String str) {
     try {
@@ -41,7 +41,7 @@ class AppConstant {
   }
 
   static Color appbarcolor = Color.fromARGB(255, 3, 136, 244);
-  static Color? backgroundcolor = Colors.lightBlue[200];
+  static Color? backgroundcolor = Color.fromARGB(147, 14, 165, 234);
 
   static TextStyle textfancyheader1 =
       GoogleFonts.sansitaSwashed(fontSize: 40, color: Colors.white);

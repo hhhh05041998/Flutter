@@ -39,7 +39,7 @@ class SubPageProfile extends StatelessWidget {
     return GestureDetector(
       onTap: () => MainViewModel().closeMenu(),
       child: Container(
-          color: Color.fromARGB(255, 212, 171, 179),
+          color: Color.fromARGB(255, 118, 85, 238),
           child: Stack(
             children: [
               Column(
